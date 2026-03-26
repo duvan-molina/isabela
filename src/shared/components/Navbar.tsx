@@ -55,7 +55,7 @@ const Navbar = () => {
     <nav
       className={cn(
         'fixed top-0 left-0 w-full z-50 transition-all duration-500 px-6 py-4',
-        isScrolled ? 'bg-white/80 backdrop-blur-xl shadow-lg py-3' : 'bg-transparent'
+        isScrolled ? 'bg-white shadow-sm' : 'bg-brand-soft shadow-none border-none'
       )}
     >
       <div className="container mx-auto flex items-center justify-between">
@@ -63,16 +63,16 @@ const Navbar = () => {
         <a href="#" className="flex items-center gap-2 group">
           <div className={cn(
             "p-2 rounded-xl transition-colors duration-500",
-            isScrolled ? "bg-brand-primary" : "bg-white/10 backdrop-blur-md"
+            isScrolled ? "bg-brand-primary" : "bg-brand-primary"
           )}>
             <PawPrint className={cn(
               "w-6 h-6 transition-colors duration-500",
-              isScrolled ? "text-white" : "text-brand-primary"
+              isScrolled ? "text-white" : "text-white"
             )} />
           </div>
           <span className={cn(
             "text-xl font-display font-extrabold tracking-tighter transition-colors duration-500",
-            isScrolled ? "text-brand-secondary" : "text-white"
+            isScrolled ? "text-brand-secondary" : "text-brand-secondary"
           )}>
             Isabela Grooming
           </span>
@@ -86,7 +86,7 @@ const Navbar = () => {
               href={link.href}
               className={cn(
                 "text-sm font-semibold uppercase tracking-widest transition-colors duration-300 hover:text-brand-primary",
-                isScrolled ? "text-brand-secondary/70" : "text-white/70"
+                isScrolled ? "text-brand-secondary/70" : "text-brand-secondary/70"
               )}
               onClick={(e) => handleLinkClick(e, link.href)}
             >
@@ -95,11 +95,8 @@ const Navbar = () => {
           ))}
           <Button
             size="sm"
-            variant={isScrolled ? "primary" : "outline"}
-            className={cn(
-              "rounded-xl",
-              !isScrolled && "border-white/20 text-white hover:bg-white/10 hover:border-white/40"
-            )}
+            variant="primary"
+            className="rounded-xl"
             onClick={() => window.open('https://wa.me/573000000000', '_blank')}
           >
             Agendar
@@ -110,7 +107,7 @@ const Navbar = () => {
         <button
           className={cn(
             "md:hidden p-2 rounded-xl transition-colors",
-            isScrolled ? "text-brand-secondary hover:bg-brand-soft" : "text-white hover:bg-white/10"
+            isScrolled ? "text-brand-secondary hover:bg-brand-soft" : "text-brand-secondary hover:bg-brand-soft"
           )}
           onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
         >
