@@ -30,7 +30,7 @@ const testimonials = [
 
 const Testimonials = () => {
   return (
-    <section id="testimonios" className="py-32 bg-brand-soft relative overflow-hidden">
+    <section id="testimonios" className="py-8 md:py-24 bg-brand-soft relative overflow-hidden">
       <div className="container mx-auto px-6 relative z-10">
         <div className="text-center mb-24">
           <div className="inline-block px-4 py-1 rounded-full bg-brand-primary/10 text-brand-primary text-xs font-bold uppercase tracking-widest mb-6">
@@ -70,17 +70,17 @@ const Testimonials = () => {
                   <div className="absolute -top-6 left-12 w-12 h-12 bg-brand-primary rounded-2xl flex items-center justify-center shadow-lg shadow-brand-primary/30">
                     <Quote className="w-6 h-6 text-white" />
                   </div>
-                  
+
                   <div className="flex gap-1 mb-8">
                     {[...Array(testimonial.rating)].map((_, i) => (
                       <Star key={i} className="w-4 h-4 fill-brand-primary text-brand-primary" />
                     ))}
                   </div>
-                  
+
                   <p className="text-xl text-gray-500 mb-10 font-light leading-relaxed italic">
                     "{testimonial.text}"
                   </p>
-                  
+
                   <div className="flex items-center gap-4 mt-auto">
                     <div className="w-12 h-12 rounded-full bg-brand-soft flex items-center justify-center text-brand-primary font-bold">
                       {testimonial.name[0]}

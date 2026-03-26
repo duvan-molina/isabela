@@ -31,10 +31,10 @@ const Navbar = () => {
     if (href.startsWith('#')) {
       e.preventDefault();
       setIsMobileMenuOpen(false);
-      
+
       const targetId = href.replace('#', '');
       const element = document.getElementById(targetId);
-      
+
       if (element) {
         // Small delay to let the menu start closing
         setTimeout(() => {
@@ -97,7 +97,7 @@ const Navbar = () => {
             size="sm"
             variant="primary"
             className="rounded-xl"
-            onClick={() => window.open('https://wa.me/573000000000', '_blank')}
+            onClick={() => window.open('https://api.whatsapp.com/message/G6KNZQMTZX7IP1?autoload=1&app_absent=0&utm_source=ig', '_blank')}
           >
             Agendar
           </Button>
@@ -135,7 +135,7 @@ const Navbar = () => {
                   Isabela Grooming
                 </span>
               </div>
-              <button 
+              <button
                 onClick={() => setIsMobileMenuOpen(false)}
                 className="p-2 rounded-xl bg-brand-soft text-brand-secondary"
               >
@@ -158,7 +158,7 @@ const Navbar = () => {
                   {link.name}
                 </motion.a>
               ))}
-              
+
               <motion.div
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}

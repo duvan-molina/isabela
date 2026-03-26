@@ -41,6 +41,15 @@
   .bg-brand-secondary .swiper-pagination-bullet-active {
     @apply bg-brand-primary opacity-100;
   }
+
+  /* Services slider dots — dark so they show over both white & blue cards */
+  .services-swiper .swiper-pagination-bullet {
+    @apply bg-brand-secondary opacity-20;
+  }
+  
+  .services-swiper .swiper-pagination-bullet-active {
+    @apply bg-brand-secondary opacity-80 w-8 rounded-full;
+  }
   
   h1, h2, h3, h4, h5, h6 {
     @apply font-display font-bold tracking-tight;

@@ -1,4 +1,4 @@
-import { Instagram, MapPin, Phone, Mail, PawPrint } from 'lucide-react';
+import { Instagram, MapPin, Phone, PawPrint } from 'lucide-react';
 
 const Footer = () => {
   return (
@@ -17,9 +17,9 @@ const Footer = () => {
               Estética canina de alta precisión con enfoque clínico. Cuidamos la salud de tu mascota a través de la higiene profesional.
             </p>
             <div className="flex gap-4">
-              <a 
-                href="https://instagram.com" 
-                target="_blank" 
+              <a
+                href="https://www.instagram.com/isabelagalindogroomer_01"
+                target="_blank"
                 rel="noreferrer"
                 className="w-14 h-14 bg-brand-soft text-brand-secondary rounded-2xl flex items-center justify-center hover:bg-brand-primary hover:text-white transition-all duration-500"
               >
@@ -45,19 +45,18 @@ const Footer = () => {
             <ul className="space-y-8 text-gray-400 font-medium">
               <li className="flex items-start gap-5">
                 <MapPin className="w-6 h-6 text-brand-primary flex-shrink-0" />
-                <span className="text-lg">Medellín, Colombia</span>
+                <span className="text-lg">Santander de Quilichao, Cauca</span>
               </li>
               <li className="flex items-start gap-5">
                 <Phone className="w-6 h-6 text-brand-primary flex-shrink-0" />
-                <span className="text-lg">+57 300 000 0000</span>
+                <span className="text-lg">+57 321 5334719</span>
               </li>
             </ul>
           </div>
         </div>
 
         <div className="pt-12 border-t border-gray-100 flex flex-col md:flex-row justify-between items-center gap-8 text-xs font-bold uppercase tracking-[0.3em] text-gray-300">
-          <p>© 2026 Isabela Grooming. All Rights Reserved.</p>
-          <p>Designed for the modern pet owner</p>
+          <p>© {new Date().getFullYear()} Isabela Grooming. Todos los derechos reservados.</p>
         </div>
       </div>
     </footer>
